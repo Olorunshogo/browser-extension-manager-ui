@@ -14,5 +14,25 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-  ]
+  ],
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "@public/*": ["./public/*"],
+      "@server/*": ["./server/*"],
+      
+      "@components/*": ["./app/components/*"],
+      "@assets/*": ["./app/assets/*"],
+      "@content/*": ["./app/content/*"],
+      "@layouts/*": ["./app/layouts/*"],
+      "@pages/*": ["./app/pages/*"],
+      "@plugins/*": ["./app/plugins/*"],      
+      "@composables/*": ["./app/composables/*"],
+      "@stores/*": ["./app/stores/*"],
+      "@utils/*": ["./app/utils/*"],
+    }
+  }
 }
