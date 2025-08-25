@@ -2,6 +2,7 @@
 <script setup lang='ts'>
     import { useSeoMeta, useHead } from 'nuxt/app';
     import { Button } from '@/components/ui/button';
+    import type { Extension } from '~/types/types';
   
     useHead({
         htmlAttrs: { lang: 'en' },
@@ -35,14 +36,7 @@
         activeFilter.value = filter;
     }
 
-    // Fetch extensions data from the API
-    interface Extension {
-        name: string;
-        logo: string;
-        description: string;
-        isActive: boolean;
-    }
-
+    // Fetch extensions data from the API   
     const { data: staticData, error, pending } = useFetch<Extension[]>('/api/extensions');
     const extensions = ref<Extension[]>([]);
 

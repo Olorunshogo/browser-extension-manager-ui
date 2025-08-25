@@ -28,7 +28,6 @@
 
 <template>
     <header>
-
         <div class="w-full h-full">
             <div class="flex items-center justify-between px-2 py-1 shadow-lg bg-(--neutral-400) dark:bg-(--neutral-700) rounded-xl border-1 dark:border-0 border-(--border-gray) w-full max-w-7xl mx-auto h-fit">
                 
@@ -70,7 +69,6 @@
 
             </div>
         </div>
-
     </header>
 </template>
 
