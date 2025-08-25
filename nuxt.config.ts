@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['@/assets/css/main.css'],
-  modules: ['@nuxt/icon', 'shadcn-nuxt'],
+  // colorMode options should be set in @nuxtjs/color-mode module options or removed if not used
+  modules: ['shadcn-nuxt', '@nuxtjs/color-mode'],
   
   app: {
     head: {
